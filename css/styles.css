@@ -1,117 +1,584 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>My Portfolio</title>
-    <meta name="description" content="Melvin Lim's Portfolio">
-    <meta name="author" content="Melvin Lim">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
-    <!-- Load Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-    <!-- Include jQuery and Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Include Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124771649-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-    gtag('config', 'UA-124771649-1');
-    </script>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-</head>
 
-<body>
-    <div class="intro">
-        <header>
-        <div class="navigation-container">
-            <div id="logo">
-                <a title="Melvin Lim" href="https://melvinlim.design/">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 565.2 600" style="enable-background:new 0 0 565.2 600;" xml:space="preserve">
-                    <g class="logo-back">
-                        <polygon points="282.4,238 0,0 0,600"/>
-                    </g>
-                    <g class="logo-back">
-                        <polygon class="st0" points="282.8,238 565.2,0 565.2,600"/>
-                    </g>
-                    <g class="logo-front">
-                        <polygon class="st1" points="282.6,196.6 0.2,0 282.6,377.1 565,0"/>
-                    </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="social-links">
-                <li><a title="Melvin Lim on Instagram" href="https://www.instagram.com/melvinlim.design/"><i class="fab fa-instagram"></i></a></li>
-                <li><a title="Melvin Lim on Codepen" href="https://codepen.io/melvinlim/"><i class="fab fa-codepen"></i></a></li>
-                <li><a title="Melvin Lim on Medium" href="https://medium.com/@melvin.lim"><i class="fab fa-medium"></i></a></li>
-                <li><a title="Melvin Lim on LinkedIn" href="https://www.linkedin.com/in/melvinlimwx/"><i class="fab fa-linkedin"></i></a></li>
-            </div>
-        </div>
-        </header>
-        <div class="about">
-            <h1>Hello!</h1>
-            <p class="body-large">I’m Melvin, a Singaporean freelance creative specialising in digital design and advertising.</p><p class="body-large">Lately I’ve also been teaching myself how to code, and have slowly been putting together this portfolio site from scratch. Have a look at some of my work below.</p>
-        </div>
-    </div> 
-    <section>
-        <div class="col-txt left-text">
-            <h2>Facebook Christmas</h2>
-            <p>Last Christmas, we sent out a warm greeting to all Facebook Business clients.</p>
-            <a href="https://www.behance.net/gallery/60329185/A-Merry-Little-Christmas" title="Facebook Christmas Project on Behance" target="_blank"><div class="btn">View Project on Behance</div></a>
-        </div>
-        <div class="col-sm drop-shadow">
-            <img src="images/Screenshot-FBChristmas.png">
-        </div>
-    </section>
-    <section class="grey-bg">
-        <div class="col-sm">
-            <div class="bottom-shadow">
-                <img src="images/Screenshot-Panadol.png">
-            </div>
-        </div>
-        <div class="col-txt right-text">
-            <h2>Panadol Toughies Website</h2>
-            <p>I designed a responsive web template for Panadol’s global Toughies campaign. This was part of a digital toolkit that was distributed across the globe.</p>
-            <a href="https://www.behance.net/gallery/64982301/Panadol-Toughies-Website" title="Panadol Toughies Project on Behance" target="_blank"><div class="btn">View Project on Behance</div></a>
-        </div>  
-    </section>
-    <section>
-        <div class="col-txt left-text">
-            <h2>Singapore Airlines Email Redesign</h2>
-            <p>I also took a stab at refreshing SIA’s marketing email, improving the UX and making it more on-brand. This project is not endorsed by SIA.</p>
-            <a href="https://medium.com/@melvin.lim/redesigning-a-singapore-airlines-email-8e970d58be1d" title="Singapore Airlines Email Redesign on Medium" target="_blank"><div class="btn">View Project on Medium</div></a>
-        </div>
-        <div class="col-sm drop-shadow">
-            <div class="img-anchor-btm">
-            <img src="images/Screenshot-SQ_eDM.png">
-            </div>
-        </div>
-    </section>
-        <section class="contact-container">
-        <div class="contact-content">
-            <p class="body-large rev-white">Let's work together. <a href="mailto:melvinlimwx@gmail.com?subject=Freelance Request" class="contact-link" target="_top">Email me</a> for availability.</p></a>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-text-container">
-                <p class="footer-text-regular">Version 1.0 &nbsp; | &nbsp; © 2018 Melvin Lim<br>Freelance Art Director and Digital Designer</p>
-            </div>
-            <div class="footer-social-links">
-                <li><a title="Melvin Lim on Instagram" href="https://www.instagram.com/melvinlim.design/"><i class="fab fa-instagram"></i></a></li>
-                <li><a title="Melvin Lim on Codepen" href="https://codepen.io/melvinlim/"><i class="fab fa-codepen"></i></a></li>
-                <li><a title="Melvin Lim on Medium" href="https://medium.com/@melvin.lim"><i class="fab fa-medium"></i></a></li>
-                <li><a title="Melvin Lim on LinkedIn" href="https://www.linkedin.com/in/melvinlimwx/"><i class="fab fa-linkedin"></i></a></li>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+/* 
+================================
+Typography
+================================
+*/
+
+a {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:visited {
+    color: #36508F;
+}
+
+a.contact-link {
+    border-bottom: 1px solid white;
+    color: rgba(255, 255, 255);
+}
+
+a.contact-link:hover {
+    color: rgb(186, 206, 250);
+    border-bottom-color: rgb(186, 206, 250, 0);
+}
+
+
+a.contact-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro';
+}
+
+h1 {
+    color: rgb(28, 38, 60);
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+}
+
+h2 {
+    color: rgb(28, 38, 60);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.3em; 
+    margin: 12px 0;
+}
+
+p { 
+    font-family: 'Lato';
+    color: rgb(48, 50, 55);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.body-large {
+    font-size: 1.3rem;
+    line-height: 1.9rem; 
+}
+
+.rev-white {
+    color: white;
+}
+
+.footer-text-regular {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+
+/* 
+================================
+Navigation
+================================
+*/
+
+.grey-bg {
+    background: #f1f3f4;
+    position: relative;
+    z-index: 0;
+}
+
+
+/* 
+================================
+Sections
+================================
+*/
+
+/* Navigation */
+
+header {
+    padding: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+/* Logo */
+
+.logo-back {
+    fill: #36508F;
+}
+
+.logo-back:hover, .logo-front:hover {
+    fill: rgb(103, 136, 242);
+}
+
+.logo-front {
+    fill:#637CD1;
+}
+
+#logo {
+    width: 23%;
+    height: 100%;
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 20px 0 15px 0;
+    text-transform: uppercase;
+}
+
+/* Social Links */
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    align-self: center;
+    font-size: 1.6rem;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fab {
+    color: #7d8693;
+    padding: 20px;
+}
+
+.fab:hover {
+    color: #4266B2;
+}
+
+/* Body */
+
+body {
+    background: #fbfcfc;
+}
+
+.intro {
+    height: 100%;
+}
+
+section {
+    padding: 10% 10% 8% 10%;
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.about { 
+    max-width: 80%;
+    margin: 25px auto 90px auto;
+}
+
+#panadol {
+    background: #f7f8f9;
+}
+
+.col-txt {
+    order: 2;
+    padding: 8% 0;
+}
+
+.col-sm {
+    color: white;
+    order: 1;
+    position: relative;
+    padding-top: 10%;
+}
+
+.contact-container {
+    background: linear-gradient(120deg, #4b6cb7 0%, #2c3d71 150%);
+    height: 50vh;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-end;
+    padding: 5% 0;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    align-self: center;
+    font-size: 1.6rem;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-text-container {
+    max-width: 90%;;
+    order: 2;
+    text-align: center;
+    align-self: center;
+    padding: 15px 0;
+}
+
+
+/* 
+================================
+Images
+================================
+*/
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.drop-shadow {
+    filter:
+    drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.1))
+    drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.05));
+}
+
+.bottom-shadow::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: 0 -1px 3px 5px rgba(0, 0, 0, .1);
+    filter: blur(2px);
+}
+
+.img-anchor-btm {
+    padding-top: %;
+}
+
+
+/* 
+================================
+Buttons
+================================
+*/
+
+.btn {
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px; 
+    line-height: 3.1em;
+    padding: 0 0 0 22px;
+    margin: 20px 0;
+    border: 1px solid #36508F;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+  
+  .btn:hover {
+    padding-right: 23px;
+    color: #637CD1;
+    border-color: #637CD1; 
+}
+  
+  .btn::after {
+    content: "⟶";
+    transition: all ease .5s;
+    position:relative;
+    opacity: 0;
+    left: -12px;
+}
+  
+  .btn:hover::after {
+    content: "⟶";
+    transition: all ease .5s;
+    opacity: 1;
+    left: 8px;
+}
+
+.btn-white {
+    width: 150px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px; 
+    line-height: 3.1em;
+    margin: 22px 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+
+/* 
+================================
+Transitions
+================================
+*/
+
+.intro {
+	-webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; 
+}
+
+.contact-link {
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; 
+}
+
+.fab {
+    -webkit-transition: color 0.3s ease;    
+    transition: color 0.3s ease;
+}
+
+.logo-back, .logo-front, .logo-back:hover, .logo-front:hover {
+    -webkit-transition: fill 0.3s ease;   
+    transition: fill 0.3s ease;
+}
+
+/* Reponsive Transitions */
+
+.about, #logo {
+    transition: all 250ms ease-in-out;
+}
+
+
+/* 
+================================
+Media Queries
+================================
+*/
+
+@media only screen and (min-width : 768px) {
+    
+    /* 
+    ================================
+    Sections
+    ================================
+    */
+
+    .navigation-container, .footer-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 10px auto;
+        width: 95vw;
+    }
+
+    .social-links {
+        font-size: 1.5em;
+        margin-left: auto;
+    }
+
+    #logo {
+        margin-top: 20px;
+        padding-left: 20px;
+        width: 100px;
+    }
+
+    /* Body */
+
+    section {
+        flex-direction: row;
+        height: 45vh;
+        padding: 8%;
+    }
+
+    .col-txt {
+        flex: 4;
+        order: 1;
+        margin-top: 0;
+    }
+
+    .col-sm {
+        padding-top: 0;
+        flex: 3;
+        order: 2;
+    }
+
+    .about {
+        max-width: 70%;
+        margin-bottom: 100px;
+    }
+
+    .contact-content {
+        max-width: 60%;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        height: 5vh;
+    }
+
+    .footer-text-container {
+        order: 1;
+        width: 80%;
+        text-align: left;
+    }
+
+    .footer-icons {
+        width: 100px;
+    }
+
+
+    /* 
+    ================================
+    Typography
+    ================================
+    */
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        line-height: 2em; 
+        margin: 0;
+    }
+    
+    p { 
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        margin: 0;
+    }
+
+    .body-large {
+        font-size: 1.6em;
+        line-height: 2.4rem;
+        margin-bottom: 12px;
+    }
+
+    .right-text {  
+        order: 2;
+        padding-left: 10%;
+    }
+
+    .left-text {
+        padding-right: 10%;       
+    }
+
+
+    /* 
+    ================================
+    Buttons
+    ================================
+    */
+
+    .btn {
+        margin: 30px 0;
+
+    }
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+    /* 
+    ================================
+    Sections
+    ================================
+    */
+
+    section {
+        height: 60vh;
+    }
+
+    .about {
+        max-width: 55%;
+    }
+
+    /* 
+    ================================
+    Typography
+    ================================
+    */
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+
+
+}
