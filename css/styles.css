@@ -60,11 +60,7 @@ a {
     font-weight: 300;
 }
 
-a:visited {
-    color: #36508F;
-}
-
-a.contact-link {
+a.contact-link, a.contact-link:visited {
     border-bottom: 1px solid white;
     color: rgba(255, 255, 255);
 }
@@ -72,12 +68,6 @@ a.contact-link {
 a.contact-link:hover {
     color: rgb(186, 206, 250);
     border-bottom-color: rgb(186, 206, 250, 0);
-}
-
-
-a.contact-link:visited {
-    color: white;
-    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
