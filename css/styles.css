@@ -61,7 +61,7 @@ a, a:visited {
 	color: inherit;
 }
 
-a.contact-link, a.contact-link:visited {
+a.contact-link {
     border-bottom: 1px solid white;
     color: rgba(255, 255, 255);
 }
@@ -69,6 +69,10 @@ a.contact-link, a.contact-link:visited {
 a.contact-link:hover {
     color: rgb(186, 206, 250);
     border-bottom-color: rgb(186, 206, 250, 0);
+}
+
+a.contact-link:visited {
+    border-bottom: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
