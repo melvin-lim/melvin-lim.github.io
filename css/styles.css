@@ -55,9 +55,10 @@ Typography
 ================================
 */
 
-a {
+a, a:visited {
     text-decoration: none;
-    font-weight: 300;
+	font-weight: 300;
+	color: inherit;
 }
 
 a.contact-link, a.contact-link:visited {
